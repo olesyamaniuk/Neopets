@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&family=Dela+Gothic+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 :root {
 }
@@ -11,16 +11,8 @@
 html {
   scroll-behavior: smooth;
 
-  color: #191919;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-image: url("/img/371446944_01fdf923-9c44-4936-af85-8168a0ea827b\ 1.png");
-}
-@media screen and (min-width: 1200px) {
-  html {
-    background-image: url("/img/371446944_01fdf923-9c44-4936-af85-8168a0ea827b\ 1\ \(1\).png");
-  }
+  color: #292a2b;
+  background-color: #ffffff;
 }
 
 body {
@@ -121,9 +113,9 @@ a {
   z-index: 5;
 
   display: flex;
-  height: 60px;
-  background: #167cc9;
-  border-bottom: 1px solid #e5e7eb;
+  height: 74px;
+  background: #ffb534;
+  border-radius: 0 0 28px 28px;
 }
 .header__background {
   position: absolute;
@@ -135,9 +127,7 @@ a {
   z-index: -1;
   -webkit-transition: left 0.3s ease;
   transition: left 0.3s ease;
-
-  background: #167cc9;
-  border-bottom: 1px solid #e5e7eb;
+  background: #ffb534;
 }
 .header.is-open .header__background {
   left: 0;
@@ -183,7 +173,7 @@ a {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  padding: 16px;
+  padding: 24px;
   position: relative;
 }
 
@@ -192,7 +182,7 @@ a {
   flex-direction: column;
 
   align-items: start;
-  gap: 30px;
+  gap: 40px;
   top: 130px;
   position: absolute;
   top: 100%;
@@ -205,32 +195,32 @@ a {
 
   padding: 40px;
 
-  border-radius: 0px 0px;
-  background: #167cc9;
+  border-radius: 0px 0px 40px 40px;
+  background: #ffb534;
+  box-shadow: 0px 4px 12px 0px #fff4ff80;
 }
 .navigation__list.is-open {
   right: 0;
 }
 .navigation__link {
-  font-family: Anybody;
-  font-size: 18px;
+  font-family: Anuphan;
+  font-size: 20px;
   font-weight: 400;
   line-height: 28px;
-  text-align: center;
+  text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 
-  text-transform: capitalize;
   text-decoration: none;
-  color: #ffffff;
+  color: #313a3a;
 }
 .navigation__link:hover,
 .navigation__link:focus {
-  font-family: Anybody;
-  font-size: 18px;
-  font-weight: 700;
+  font-family: Anuphan;
+  font-size: 20px;
+  font-weight: 600;
   line-height: 28px;
-  text-align: center;
+  text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 }
@@ -261,15 +251,13 @@ a {
   .header {
     width: 100%;
 
-    height: 64px;
-    padding: 22px 80px;
+    height: 76px;
+    padding: 24px 80px;
     display: flex;
     align-items: center;
     justify-content: center;
 
     z-index: 1000;
-
-    border-radius: 0px 0px;
   }
 
   .header__background {
@@ -310,11 +298,10 @@ a {
 
   .navigation__link {
     display: flex;
-
-    font-family: Anybody;
-    font-size: 14px;
+    font-family: Anuphan;
+    font-size: 18px;
     font-weight: 400;
-    line-height: 20px;
+    line-height: 28px;
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
@@ -330,31 +317,31 @@ a {
 
 .home {
   width: 375px;
-  height: 889px;
+  height: 828px;
 
-  padding: 120px 20px 0;
+  padding: 110px 20px 0;
   margin: auto;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url("/img/home/Hero.png");
+  background-image: url("/image/home/Block\ 1.jpg");
 }
 
 .home-title {
   margin: auto;
-  width: 334.04px;
-  height: 165px;
+  width: 312px;
+  height: 148px;
 }
 .home-text {
-  font-family: Anybody;
-  font-size: 24px;
+  font-family: Anuphan;
+  font-size: 20px;
   font-weight: 700;
-  line-height: 32px;
+  line-height: 28px;
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 
-  padding: 10px 0 14px;
+  padding: 10px 0 48px;
   color: #ffffff;
 }
 .home__google-button_link {
@@ -366,27 +353,29 @@ a {
 @media screen and (min-width: 1200px) {
   .home {
     width: 1440px;
-    height: 617px;
+    height: 800px;
 
-    padding: 110px 0 0 113px;
+    padding: 196px 0 0 95px;
     display: flex;
     flex-direction: column;
     align-items: start;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-image: url("/img/home/Hero\ \(1\).png");
+
+    background: url("/image/home/Block 1.png"),
+      linear-gradient(180deg, #4c8f95 0%, #007f8a 23.98%);
   }
 
   .home-title {
-    width: 517px;
-    height: 255.37px;
+    width: 500px;
+    height: 237px;
   }
   .home-text {
-    padding: 12px 0 40px;
-    width: 517px;
+    padding: 20px 0 56px;
+    width: 507px;
 
-    font-family: Anybody;
+    font-family: Anuphan;
     font-size: 24px;
     font-weight: 700;
     line-height: 32px;
@@ -401,20 +390,25 @@ a {
   }
 }
 .about {
-  padding: 60px 20px;
+  padding: 64px 20px 0;
   margin: auto;
   width: 375px;
+  height: 633px;
 
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/image/about/About\ us.png");
 }
 
 .about-title {
-  font-family: Dela Gothic One;
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 40px;
+  font-family: Anuphan;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
@@ -423,7 +417,7 @@ a {
 }
 
 .about-text {
-  font-family: Anybody;
+  font-family: Anuphan;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -432,13 +426,13 @@ a {
   text-decoration-skip-ink: none;
 
   color: #ffffff;
-  padding-top: 32px;
-  padding-bottom: 36px;
+  padding-top: 40px;
+  padding-bottom: 44px;
 }
 .about-text-bold {
-  font-family: Anybody;
+  font-family: Anuphan;
   font-size: 16px;
-  font-weight: 900;
+  font-weight: 700;
   line-height: 24px;
 
   text-underline-position: from-font;
@@ -446,67 +440,81 @@ a {
 }
 .about-img {
   width: 335px;
-  height: 182px;
+  height: 192px;
 }
 @media screen and (min-width: 1200px) {
   .about {
+    background-image: url("/image/about/About\ us\ \(1\).png");
     padding: 88px;
     margin: auto;
     width: 1440px;
-    gap: 60px;
+    height: 543px;
+
+    gap: 32px;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+  }
+  .about-container {
+    display: flex;
+    flex-direction: column;
     align-items: start;
     justify-content: start;
   }
   .about-title {
-    font-family: Dela Gothic One;
-    font-size: 44px;
-    font-weight: 400;
-    line-height: 48px;
+    font-family: Anuphan;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 68px;
     text-align: center;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
   }
 
   .about-text {
-    font-family: Anybody;
-    font-size: 18px;
+    font-family: Anuphan;
+    font-size: 24px;
     font-weight: 400;
-    line-height: 28px;
+    line-height: 32px;
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
 
     color: #ffffff;
-    padding-top: 32px;
-    padding-bottom: 36px;
+    padding-top: 64px;
+    padding-bottom: 0px;
   }
   .about-text-bold {
-    font-family: Anybody;
-    font-size: 18px;
+    font-family: Anuphan;
+    font-size: 24px;
     font-weight: 700;
-    line-height: 28px;
+    line-height: 32px;
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
   }
   .about-img {
-    width: 616px;
-    height: 298px;
+    width: 650px;
+    height: 366px;
   }
 }
 .advantages {
   width: 375px;
+  height: 804px;
 
   margin: auto;
-  padding: 60px 20px;
+  padding: 64px 20px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/image/advantages/Frame\ 1000004574.png");
 }
 
 .advantages-list {
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  gap: 42px;
   padding-top: 40px;
 }
 .advantages-item {
@@ -515,11 +523,11 @@ a {
   display: flex;
   align-items: start;
   margin: auto;
-  gap: 24px;
+  gap: 16px;
 }
 
 .advantages-item-text {
-  font-family: Anybody;
+  font-family: Anuphan;
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
@@ -527,71 +535,79 @@ a {
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 
-  color: #ffffff;
+  color: #313a3a;
 }
 .advantages-text-bold {
-  font-family: Anybody;
+  font-family: Anuphan;
   font-size: 18px;
   font-weight: 700;
   line-height: 28px;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  color: #ffffff;
+
+  color: #313a3a;
 }
 @media screen and (min-width: 1200px) {
   .advantages {
     width: 1440px;
+    height: 610px;
+
+    background-image: url("/image/advantages/How\ to\ Play.png");
 
     margin: auto;
-    padding: 88px;
+    padding: 88px 173px 0 243px;
   }
 
   .advantages-list {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    gap: 32px;
-    width: 1264px;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    width: auto;
     height: 284px;
     padding: 0;
-    margin-top: 60px;
+    margin: 0;
+    margin-top: 64px;
   }
   .advantages-item {
-    width: 544px;
-
+    width: 452px;
+    margin: 0;
     display: flex;
     align-items: start;
-    margin: auto;
-    gap: 24px;
-  }
-  .advantages-item-two {
-    padding-left: 64px;
+
+    gap: 32px;
   }
 }
 
 .gallery {
   width: 375px;
+  height: 493px;
+
   margin: auto;
-  padding: 60px 0px;
+  padding: 64px 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/image/gallery/Gallery.png");
 }
 
 .gallery-list {
   width: 375px;
   margin: auto;
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 36px;
 }
 
 .gallery-item {
   overflow: hidden;
   position: relative;
-  width: 246.1px;
-  height: 440px;
-  gap: 0px;
-  border-radius: 24.86px;
+  width: 335px;
+  height: 192px;
 
-  margin: 0;
+  margin: 0 10px;
 }
 .gallery-img {
   width: 100%;
@@ -603,7 +619,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 56px;
+  gap: 86px;
 }
 
 .gallery-button {
@@ -627,84 +643,105 @@ a {
 @media screen and (min-width: 1200px) {
   .gallery {
     width: 1440px;
+    height: 975px;
 
-    padding: 88px 0px;
+    background-image: url("/image/gallery/Gallery\ \(1\).png");
+    padding: 88px 0px 0;
   }
 
   .gallery-list {
     width: auto;
     margin: auto;
-    padding: 40px 0;
+    padding: 64px 0 56px;
   }
   .gallery-item {
     overflow: hidden;
     position: relative;
-    width: 314px;
-    height: 560px;
+    width: 980px;
+    height: 562px;
+    margin: 0 24px;
   }
 }
 
 .reviews {
-  padding: 60px 00px;
+  padding: 64px 0px 0;
   margin: auto;
   width: 375px;
+  height: 481px;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/image/reviews/Reviews.png");
 }
 .reviews-container {
   width: 375px;
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 36px;
 }
 
 .reviews-item {
   margin: 0 18px;
   width: 335px;
-  height: 196px;
-  border-radius: 12px;
+  height: 180px;
   background: #ffffff;
-  border: 1px solid #3ce9ff;
-  box-shadow: 0px 9.05px 26.57px 0px #d7e4f980;
-  padding: 16px 20px;
+  border: 1px solid #e5eaf4;
+  border-radius: 20px;
+  padding: 24px 20px;
 }
 .reviews-item-container {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 20px;
 }
 .reviews-item-text-bold {
-  font-family: Anybody;
-  font-size: 16px;
-  font-weight: 900;
-  line-height: 24px;
+  font-family: Anuphan;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  color: #2e3745;
+
+  color: #333538;
 }
 .reviews-item-text {
-  font-family: Anybody;
-  font-size: 16px;
+  font-family: Anuphan;
+  font-size: 18px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 28px;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  padding-top: 12px;
+  color: #5f6366;
+
+  padding-top: 20px;
 }
 
 @media screen and (min-width: 1200px) {
   .reviews {
-    padding: 88px 0px;
+    padding: 88px 0px 0;
     margin: auto;
     width: 1440px;
+    height: 633px;
+
+    background-image: url("/image/reviews/Reviews\ \(1\).png");
   }
   .reviews-container {
     width: 1440px;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 64px;
+    padding-bottom: 56px;
+  }
+  .reviews-item {
+    margin: 0 22px;
+    width: 554px;
+    height: 220px;
+
+    padding: 40px;
   }
 }
 .footer {
-  background: #013881;
+  background: #00565e;
 
   padding: 40px 20px;
   margin: auto;
@@ -724,9 +761,9 @@ a {
   gap: 4px;
 }
 .footer-text {
-  font-family: Anybody;
+  font-family: Anuphan;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 20px;
   text-align: left;
   text-underline-position: from-font;
@@ -737,9 +774,9 @@ a {
 }
 
 .footer-copyright {
-  font-family: Anybody;
+  font-family: Anuphan;
   font-size: 10px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 20px;
   text-align: center;
   text-underline-position: from-font;
@@ -762,7 +799,7 @@ a {
     gap: 4px;
   }
   .footer-text {
-    font-family: Anybody;
+    font-family: Anuphan;
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
@@ -772,7 +809,7 @@ a {
   }
 
   .footer-copyright {
-    font-family: Anybody;
+    font-family: Anuphan;
     font-size: 12px;
     font-weight: 500;
     line-height: 16px;
@@ -786,12 +823,11 @@ a {
   flex-direction: column;
   align-items: start;
   padding: 114px 20px 51px;
-  background-color: #ffffff;
 }
 
 .policy-terms-title {
-  font-family: Anybody;
-  font-size: 24px;
+  font-family: Anuphan;
+  font-size: 28px;
   font-weight: 700;
   line-height: 32px;
   text-align: center;
@@ -806,7 +842,7 @@ a {
   font-size: 20px;
   font-weight: 700;
   line-height: 28px;
-  text-align: justify;
+  text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 
@@ -879,7 +915,7 @@ a {
   text-decoration: none;
 }
 .email-link-color {
-  color: #000000;
+  color: #292a2b;
 
   font-family: Inter;
   font-size: 20px;
@@ -900,7 +936,7 @@ a {
     margin: auto;
   }
   .policy-terms-title {
-    font-family: Anybody;
+    font-family: Anuphan;
     font-size: 32px;
     font-weight: 700;
     line-height: 40px;
